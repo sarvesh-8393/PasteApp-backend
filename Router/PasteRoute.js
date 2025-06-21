@@ -13,7 +13,7 @@ PasetRouter.get('/recent', verifyToken, getRecent);           // Static
 PasetRouter.get('/user/:id', verifyToken, getUserIdPaste); 
 PasetRouter.put('/update/:id', verifyToken, putUpdate);
 PasetRouter.delete('/delete/:id', verifyToken, deletePaste);     // Semi-dynamic
-PasetRouter.get('/:id', verifyToken, getIdPaste);              // Dynamic - ALWAYS LAST
+PasetRouter.get('/:id', getIdPaste);              // Dynamic - ALWAYS LAST
 
 
 
