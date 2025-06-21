@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import Pastemodel from "../model/Pastemodel.js";
-import { useParams } from "react-router-dom";
+
 
 export const newPaste = async (req, res) => {
   try {
